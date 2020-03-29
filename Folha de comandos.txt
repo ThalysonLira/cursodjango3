@@ -1,0 +1,43 @@
+Ativar Virtual Env:
+cd [projeto]/venv/Scripts
+activate
+
+Criar novo projeto Django:
+python manage.py startproject [projeto]
+
+Executar projeto:
+python manage.py runserver
+
+Parar o servidor: 
+Ctrl + c
+
+Criar tabelas BD (sqlite3):
+python manage.py migrate
+
+Criar superusuario (admin):
+python manage.py createsuperuser
+
+Iniciar nova App:
+python manage.py startapp [app]
+
+Verificar mudanças do banco de dados:
+python manage.py makemigrations
+
+Criar repositório Git:
+git init
+
+Mostrar hitórico do repositório:
+git status
+
+Fazer um commit:
+[criar arquivo .gitignore no projeto e escrever venv nele]
+git add .
+git commit -m "Mensagem do Commit"
+git push -u origin master [apenas na primeira vez]
+git push origin master
+
+Adiconar remote:
+git remote add origin [endereco de onde será salvo]
+
+Listar branchs:
+git branch -v
