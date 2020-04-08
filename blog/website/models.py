@@ -19,6 +19,8 @@ class Post(models.Model):
         default=Categorias.GR,
     )
 
+    deleted = models.BooleanField(default=False)
+
     # Exibe o título do post na tela de criar post (admin)
     def __str__(self):
         return self.title
