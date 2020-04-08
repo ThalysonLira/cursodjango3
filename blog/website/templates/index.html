@@ -1,1 +1,11 @@
 <h1>Blog</h1>
+
+<ul>
+{% for item in lista %}
+    {% if item == 'Django' %}
+        <li><b>{{ item }}</b></li>
+    {% else %}
+        <li>{{ item }}</li>
+    {% endif %}
+{% endfor %}
+</ul>
