@@ -7,7 +7,7 @@ def hello_blog(request):
     tecnologias = ['Django', 'Python', 'Git', 'Html', 'Banco de Dados',
                    'Linux', 'Nginx','Uwsgi','Systemclt']
     
-    list_posts = Post.objects.all()
+    list_posts = Post.objects.filter(deleted=False)
     
     data = {
         'name': 'Curso Django 3',

@@ -10,6 +10,6 @@ class PostAdmin(admin.ModelAdmin):
 
     # Exibe na listagem de posts apenas os posts aprovados
     def get_queryset(self, request):
-        return Post.objects.filter(deleted=False)
+        return Post.objects.all()
 
 admin.site.register(Post, PostAdmin)
