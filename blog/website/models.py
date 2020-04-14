@@ -21,6 +21,10 @@ class Post(models.Model):
 
     deleted = models.BooleanField(default=False)
 
+    # Método criado para retornar a categoria de cada post
+    def get_categories_label(self):
+        return self.get_categories_display()
+
     # Exibe o título do post na tela de criar post (admin)
     def __str__(self):
         return self.title
